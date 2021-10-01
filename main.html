@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+
+<input id="create" type="button" value="Create Smiley" onclick="showit()">
+<input type="button" value="New Smiley" onClick="location.href=location.href">
+<input id="button_show" type="button" value="Show Eyes" onclick="showeyes()">
+<input id="button_show_mouth" type="button" value="Show Mouth" onclick="showmouth()">
+<input id="but_move" type="button" value="Move" onclick="move()">
+<input id="leave" type="button" value="Leave" onclick="leave()">
+
+
+
+
+
+<div class="factory">
+
+    <img src="images/pipe.png" alt="factory" class="img0">
+</div>
+
+<div id="boo">
+    <img src="images/Boo.png" alt="Fantôme" class="Boo">
+</div>
+
+
+<div id="emoji" class="move">
+
+    <img src="images/cercle.png" alt="cercle" class="img1">
+    <img src="images/eyesHappy.png" alt="eyes" class="eyes nbr_eye0" onclick="changeeyes(2)">
+    <img src="images/eyesSad.png" alt="eyes" class="eyes nbr_eye1" onclick="changeeyes(0)">
+    <img src="images/angryeyes.png" alt="eyes" class="eyes nbr_eye2" onclick="changeeyes(1)">
+    <img src="images/mouthhappy.png" alt="smile" class="mouth nbr_mouth0" onclick="changemouth(2)">
+    <img src="images/mouthsad.png" alt="smile" class="mouth nbr_mouth1" onclick="changemouth(0)">
+    <img src="images/angrymouth.png" alt="smile" class="mouth nbr_mouth2" onclick="changemouth(1)">
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+<script src="app.js"></script>
+
+
+</body>
+</html>
